@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web-developer portfolio</title>
+  <link href="/src/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+</head>
+<body class="overflow-x-hidden bg-[#0E1115]">
+  <header>
+    <nav class="flex bg-[#010511] h-20 justify-between items-center w-full max-w-full pr-10 pl-5 fixed z-50">
+      <a href="#home"><img src="public/frontend-end-html-javascript-tailwind-css-html.png" class="max-w-40 h-fit" alt="company-logo"></a>
+      <div class="">
+        <ul class="menu-link hidden  md:flex md:flex-row md:text-gray-400 md:gap-5 flex-col md:relative absolute md:top-0 top-20 md:left-0 left-0 right-0 w-full md:space-y-0 space-y-12 gap-10 bg-[#010511] md:bg-transparent md:p-0 p-8 text-white md:font-normal font-semi-bold">
+          <li><a href="#project" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          
+          <button class="bg-[#01CDE8] px-6 py-2 text-black rounded cursor-pointer md:hidden block">Hire Me</button>
+        </ul>
+      </div>
+      <button class="bg-[#01CDE8] px-6 py-2 rounded cursor-pointer md:block hidden">Hire Me</button>
+      <button class="hamburger text-white text-xl md:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class=" section-1 min-h-screen  relative bg-[#21242C] flex flex-col items-center justify-center gap-8 md:pt-0 pt-10 px-8">
+       <div class="absolute inset-0 rounded-full bg-[radial-gradient(circle,#01CEE9,transparent)] blur-3xl opacity-30"></div>
+      <h3 class="bg-[#21242C] text-[#01CDE8] max-w-fit py-2 px-3 rounded-full z-10">Frontend Developer</h3>
+      <h1 class="text-4xl md:text-7xl font-[poppins] text-center font-bold z-10 text-white">Hi, I'm <span class="text-[#05DDFF]">Emmanuel</span> </h1>
+      <p class="text-xl md:text-2xl max-w-2xl z-10 text-gray-400 text-center">I craft responsive, mobile-first websites with clean code and modern design.
+         Turning ideas into beautiful digital experiences.
+      </p>
+      <div class="md:flex md:flex-row md:gap-4 space-x-4 z-10 items-center justify-center max-w-xl">
+        <button class="bg-[#01CEE9] px-8 py-4 font-medium rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 cursor-pointer">View My Work</button>
+        <button class="bg-[#21242C] px-8 py-4 font-medium rounded-lg hover:opacity-90 transition-all duration-300 hover:bg-[#21242C]/70 border-[#21242C] hover:border-[#01CEE9] text-white cursor-pointer">Get In Touch</button>
+      </div>
+      <a href="#project" class="absolute mt-10 bottom-10 left-1/2 right-1/2 -translate-x-1/2 flex flex-col items-center  gap-1 text-white animate-[float_1.6s_ease-in-out_infinite]">
+        <span class="text-xs tracking-wide uppercase opacity-70">
+          Scroll Down
+        </span>
+        <span class="text-xl">↓</span>
+      </a>
+    </section>
+
+    <section id="project" class="section-2 min-h-[200vh] bg-[#0E1115] flex-flex-col items-center justify-center pt-24">
+      <div class="flex flex-col items-center justify-center">
+        <span class="font-medium text-sm tracking-wider mb-4 mt-20 text-[#03C1DB] uppercase">portfolio</span>
+        <h2 class="text-4xl md:text-4xl lg:text-6xl font-bold mb-6 text-white">Selected  <span class="text-[#03C1DB]">Projects</span></h2>
+        <p class="text-lg md:max-w-3xl max-w-sm text-gray-400 text-center mb-16">Each project is built with responsiveness, performance, and user experience in mind.</p>
+      </div>
+      <div class="project-box md:grid md:grid-cols-2 grid grid-cols-1 gap-8">
+        <div class="grid-1 mx-10 border border-gray-700 rounded-2xl overflow-hidden max-w-4xl">
+          <div class="image">
+            <img src="public/plumbing-website-html-smallbusiness-website.png" loading="lazy" class="" alt="project-image">
+          </div>
+          <div class="letter-project border border-gray-700 bg-[#15181E] flex flex-col gap-6 p-6">
+            <div class="flex flex-row justify-between">
+              <h3 class="text-xl md:text-2xl font-bold text-white">Plumbing Website</h3>
+              <a href="https://plumbing-alpha.vercel.app/" target="_blank" class="px-3 py-1 text-xs font-medium rounded-full border border-gray-700 text-[#03CFEB]">View Site</a>
+            </div>
+            
+            <p class="text-gray-400">
+              A modern plumbing website built with HTML, Tailwind CSS, and JavaScript features a clean and professional design.
+              Using a mobile-first approach, it ensures fast performance and a good experience across all devices. 
+            </p>
+            
+            <ul class="grid grid-cols-2 list-disc marker:text-[#03CFEB] pl-4 text-gray-400 gap-2">
+              <li>Responsive layout</li>
+              <li>Mobile-friendly interface</li>
+              <li>Clear service information</li>
+              <li>Fast and reliable layout</li>
+            </ul>
+            <div class="skill text-[#03CFEB]  flex gap-2">
+              <span class="px-3 py-1 text-xs font-medium rounded-full border border-gray-700">HTML5</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full border border-gray-700">Tailwind CSS</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full border border-gray-700">JavaScript</span>
+
+            </div> 
+          </div>
+        </div>
+
+        <div class="grid-2 mx-10 border border-gray-700 rounded-2xl overflow-hidden">
+          <div class="image">
+            <img src="public/restaurant-website-portfolio-web-developer.png" loading="lazy" class="" alt="project-image">
+          </div>
+          <div class="letter-project border border-gray-700 bg-[#15181E] flex flex-col gap-6 p-6">
+            <div class="flex flex-row justify-between">
+              <h3 class="text-xl md:text-2xl font-bold text-white">Restaurant Website</h3>
+              <a href="https://ember-restaurant-seven.vercel.app/" class="px-3 py-1 text-xs font-medium rounded-full border border-gray-700 text-[#03CFEB]">View Site</a>
+            </div>
+            
+            <p class="text-gray-400">
+              A visually engaging restaurant website built to attract customers, highlight the menu, and simplify table bookings, with strong emphasis on performance and mobile usability.
+            </p>
+            
+            <ul class="grid grid-cols-2 list-disc marker:text-[#03CFEB] pl-4 text-gray-400 gap-2">
+              <li>Fully responsive layout</li>
+              <li>Clean and modern UI</li>
+              <li>Well-structured page layout</li>
+              <li>Mobile-first design</li>
+            </ul>
+            <div class="skill text-[#03CFEB]  flex gap-2">
+              <span class="px-3 py-1 text-xs font-medium rounded-full border border-gray-700">HTML5</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full border border-gray-700">Tailwind CSS</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full border border-gray-700">JavaScript</span>
+
+            </div> 
+          </div>
+        </div>
+
+        <div class="grid-3 mx-10 border border-gray-700 rounded-2xl overflow-hidden">
+          <div class="image">
+            <img src="public/calculator-html-developer.png" loading="lazy" class="" alt="project-image">
+          </div>
+          <div class="letter-project border border-gray-700 bg-[#15181E] flex flex-col gap-6 p-6">
+            <div class="flex flex-row justify-between">
+              <h3 class="text-xl md:text-2xl font-bold text-white">Age Calculator</h3>
+              <a href="https://myagecalcuproject.netlify.app/" class="px-3 py-1 text-xs font-medium rounded-full border border-gray-700 text-[#03CFEB]">View Site</a>
+            </div>
+            
+            <p class="text-gray-400">
+              A responsive age calculator built with HTML, CSS, and JavaScript that allows users to 
+              input their birth date and instantly calculates their age in years, months, and days.
+
+            </p>
+            
+            <ul class="grid grid-cols-2 list-disc marker:text-[#03CFEB] pl-4 text-gray-400 gap-2">
+              <li>Fully responsive</li>
+              <li>Accessible and easy to use</li>
+              <li>Fast and lightweight</li>
+              <li>Accurate age calculation</li>
+            </ul>
+            <div class="skill text-[#03CFEB]  flex gap-2">
+              <span class="px-3 py-1 text-xs font-medium rounded-full border border-gray-700">HTML5</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full border border-gray-700">CSS3</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full border border-gray-700">JavaScript</span>
+
+            </div> 
+          </div>
+        </div>
+
+        <div class="grid-4 mx-10 border border-gray-700 rounded-2xl overflow-hidden">
+          <div class="image">
+            <img src="/public/Screenshot 2025-12-28 052930.png" loading="lazy" class="" alt="project-image">
+          </div>
+          <div class="letter-project border border-gray-700 bg-[#15181E] flex flex-col gap-6 p-6">
+            <div class="flex flex-row justify-between">
+              <h3 class="text-xl md:text-2xl font-bold text-white">Portfolio Website</h3>
+              <a href="" class="px-3 py-1 text-xs font-medium rounded-full border border-gray-700 text-[#03CFEB]">View Site</a>
+            </div>
+            
+            <p class="text-gray-400">
+              A personal portfolio website showcasing my projects, skills, and experience.
+              The layout emphasizes a clean and modern user interface.
+              It is fully responsive, ensuring a seamless experience on all devices.
+              
+          </p>
+                        
+            <ul class="grid grid-cols-2 list-disc marker:text-[#03CFEB] pl-4 text-gray-400 gap-2">
+              <li>Responsive grid layouts</li>
+              <li>Easy-to-access contact</li>
+              <li>Smooth navigation</li>
+              <li>Optimized for all screens</li>
+            </ul>
+            <div class="skill text-[#03CFEB]  flex gap-2">
+              <span class="px-3 py-1 text-xs font-medium rounded-full border border-gray-700">HTML5</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full border border-gray-700">Tailwind CSS</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full border border-gray-700">JavaScript</span>
+
+            </div> 
+          </div>
+        </div>
+
+    </section>
+
+    <section id="skills" class="section-3 bg-[#0E1115] md:min-h-[150vh] min-h-[260vh]  flex flex-col items-center justify-center px-10 pt-20">
+      <div class="flex flex-col items-center justify-center">
+        <span class="font-medium text-sm tracking-wider mb-4 text-[#03C1DB] uppercase">Expertise</span>
+        <h2 class="text-4xl md:text-4xl lg:text-6xl font-bold mb-6 text-white">Skills &  <span class="text-[#03C1DB]">Technologies</span></h2>
+        <p class="text-lg md:max-w-4xl max-w-2xl text-gray-400 text-center mb-16">The tools and techniques I use to bring ideas to life.</p>
+      </div>
+      <div class="Technologies md:grid md:grid-cols-4 grid grid-cols-1 gap-4">
+
+        <div class="1 border border-gray-700 flex flex-col gap-4 p-7 rounded-xl">
+          <div class="max-w-fit bg-[#14171C] py-4 px-4 rounded-lg">
+            <i class="fa fa-code text-[#03C1DB] text-xl" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-white">Clean Code</h3>
+          <p class="leading-relaxed text-gray-400">Writing semantic, maintainable, and well-structured HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div class="1 border border-gray-700 flex flex-col gap-4 p-7 rounded-xl">
+          <div class="max-w-fit bg-[#14171C] py-4 px-4 rounded-lg">
+            <i class="fa-solid fa-layer-group text-[#03C1DB] text-xl" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-white">Modern Design</h3>
+          <p class="leading-relaxed text-gray-400">Creating visually appealing interfaces with attention to typography and spacing.</p>
+        </div>
+
+        <div class="1 border border-gray-700 flex flex-col gap-4 p-7 rounded-xl">
+          <div class="max-w-fit bg-[#14171C] py-4 px-4 rounded-lg">
+            <i class="fa-solid fa-mobile-screen-button text-[#03C1DB] text-xl" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-white">Mobile-First</h3>
+          <p class="leading-relaxed text-gray-400">Designing for mobile devices first, then scaling up for larger screens.</p>
+        </div>
+
+        <div class="1 border border-gray-700 flex flex-col gap-4 p-7 rounded-xl">
+          <div class="max-w-fit bg-[#14171C] py-4 px-4 rounded-lg">
+            <i class="fa-solid fa-chart-line text-[#03C1DB] text-xl" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-white">Performance</h3>
+          <p class="leading-relaxed text-gray-400">Optimizing websites for fast loading times and smooth interactions.p>
+        </div>
+      </div>
+      <div class="mt-12 flex gap-2 flex-wrap min-w-xl text-center items-center justify-center">
+        <span class="px-5 py-2.5 text-sm font-medium rounded-full border border-gray-700 bg-gray-400/10 text-white">HTML5</span>
+        <span class="px-5 py-2.5 text-sm font-medium rounded-full border border-gray-700 bg-gray-400/10 text-white">CSS3</span>
+        <span class="px-5 py-2.5 text-sm font-medium rounded-full border border-gray-700 bg-gray-400/10 text-white">JavaScript</span>
+        <span class="px-5 py-2.5 text-sm font-medium rounded-full border border-gray-700 bg-gray-400/10 text-white">Tailwind CSS</span>
+        <span class="px-5 py-2.5 text-sm font-medium rounded-full border border-gray-700 bg-gray-400/10 text-white">Responsive Design</span>
+        <span class="px-5 py-2.5 text-sm font-medium rounded-full border border-gray-700 bg-gray-400/10 text-white">Git & GitHub</span>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section-4 flex flex-col bg-[#14171C] px-10 pb-20 pt-28">
+      <div class="flex flex-col items-center justify-center">
+        <span class="font-medium text-sm tracking-wider mb-4 text-[#03C1DB] uppercase">Testimonials</span>
+        <h2 class="text-4xl md:text-4xl lg:text-6xl font-bold mb-6 text-white">What <span class="text-[#03C1DB]">Clients Say</span></h2>
+        <p class="text-lg max-w-sm text-gray-400 text-center mb-16">Feedback from clients I've had the pleasure of working with.</p>
+      </div>
+      <div class="review-box md:flex md:flex-row flex flex-col justify-center gap-10">
+        <div class="border border-gray-400/30 text-lg leading-relaxed max-w-lg p-8 flex flex-col gap-6 rounded-lg">
+          <p class="text-white italic">"Very impressed with the attention to detail and responsiveness. 
+            Emmanuel understood the requirements quickly and translated them into a smooth, user-friendly interface.
+             I would definitely work with him again."
+          </p>
+          <div class="flex gap-3">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center border bg-[#21242C]">
+             <span class="text-[#00E1FF] font-bold text-lg">S</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-semibold text-white">Startup Founder</span>
+              <span class="text-sm text-gray-400 ">Tech Industry</span>
+            </div>
+          </div>
+        </div>
+        <div class="border border-gray-400/30 text-lg leading-relaxed max-w-lg p-8 flex flex-col gap-6 rounded-lg">
+          <p class="text-white italic">"Emmanuel delivered a clean, modern, and fully responsive website. The mobile version looks amazing, and the
+             layout works perfectly across all devices. Communication was clear, and the project was delivered on time."
+          </p>
+          <div class="flex gap-3">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center border bg-[#21242C]">
+             <span class="text-[#00E1FF] font-bold text-lg">S</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-semibold text-white">Small Business Owner</span>
+              <span class="text-sm text-gray-400 ">E-commerce</span>
+            </div>
+          </div>
+        </div>
+     
+      </div>
+
+    </section>
+
+    <section id="contact" class="bg-[#0E1115] flex flex-col items-center justify-center px-10 pt-32 pb-28">
+      <div class="flex flex-col items-center justify-center">
+        <span class="font-medium text-sm tracking-wider mb-4 text-[#03C1DB] uppercase">Contact</span>
+        <h2 class="text-4xl md:text-4xl lg:text-6xl font-bold mb-6 text-white">Let's <span class="text-[#03C1DB]">Work Together</span></h2>
+        <p class="text-lg md:max-w-2xl max-w-sm text-gray-400 text-center mb-16">Have a project in mind? I'd love to hear about it. Send me a message and let's create something amazing.</p>
+      </div>
+      <div class="md:flex md:flex-row flex flex-col md:items-start gap-12">
+        <div class="left flex-1 flex flex-col gap-6 md:p-6 p-0">
+          <div class="email p-6 rounded-2xl border border-gray-400/30 bg-[#15181E] flex gap-4 items-center md:max-w-lg ">
+            <div class="bg-[#21242C] h-10 w-10 flex items-center justify-center rounded-lg">
+              <i class="fa-regular fa-envelope text-[#23C6FC]"></i>
+            </div>
+            <div>
+              <h3 class="font-semibold mb-1 text-white">Email</h3>
+              <a href="mailto:emmanuelobinna62@gmail.com" class="text-gray-400">emmanuelobinna62@gmail.com</a>
+            </div>
+          </div>
+          <div class="location p-6 rounded-2xl border border-gray-400/30 bg-[#15181E] flex gap-4 items-center max-w-lg">
+            <div class="bg-[#21242C] h-10 w-10 flex items-center justify-center rounded-lg">
+              <i class="fa-solid fa-location-dot text-[#23C6FC]"></i>
+            </div>
+            <div>
+              <h3 class="font-semibold mb-1 text-white">Location</h3>
+              <p class="text-gray-400">Available for remote work worldwide</p>
+            </div>
+          </div>
+          <div class="location p-6 rounded-2xl border border-gray-400/30 bg-[#15181E] flex flex-col gap-2 max-w-lg ">
+            <p class="font-medium mb-1 text-white">Open for opportunities</p>
+            <p class="text-sm text-gray-400">Currently accepting new projects and collaborations. Let's build something great together.</p>
+          </div>
+        </div>
+        <div class="right flex-1 md:p-4 p-0">
+          <form action="" class="p-6 rounded-2xl bg-[#15181E] border border-gray-400/30 flex flex-col gap-10">
+            <div class="email-input md:flex md:flex-row flex flex-col md:justify-between">
+              <div class="flex flex-col gap-2">
+                <label for="Name" class="text-white">Name</label>
+                <input type="text" placeholder="Your Name" required class="bg-[#21242C] text-white w-full px-4 py-3 rounded-lg border border-gray-400/30 focus:outline-[#01CDE8]">
+              </div>
+              <div class="flex flex-col gap-2">
+                <label for="email" class="text-white">Email</label>
+                <input type="email" placeholder="Your email" required class="bg-[#21242C] text-white w-full px-4 py-3 rounded-lg border border-gray-400/30 focus:outline-[#01CDE8]">
+              </div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="message" class="text-white">Message</label>
+              <textarea name="message" placeholder="Tell Me aboout your project..." id="message" class="bg-[#21242C] border-gray-400/30 text-white max-w-full w-full rounded-lg min-h-30 pl-2 pt-2 focus:outline-[#01CDE8]"></textarea>
+            </div>
+            
+            <div>
+              <button class="bg-[#01CDE8] px-8 py-4 md:w-auto cursor-pointer font-medium rounded-lg hover:scale-105 hover: opacity-90 transition-all duration-300 w-full">Send Message</button>
+            </div>
+          
+          </form>
+        </div>
+       
+      </div>
+    </section>
+  
+  </main>
+
+  <footer class="bg-[#0E1115] pb-10 px-10">
+    <hr class="text-gray-400/30 h-px">
+    <div class="md:flex md:flex-row flex flex-col justify-between items-center w-full max-w-full my-10 gap-6">
+      <a href=""><img src="public/frontend-end-html-javascript-tailwind-css-html.png" class="max-w-40 h-auto" alt="company-logo"></a>
+      <div>
+        <ul class="links flex text-gray-400 gap-5">
+          <li><a href="#project" class="">Projects</a></li>
+          <li><a href="#skills" class="">Skills</a></li>
+          <li><a href="#testimonials" class="">Testimonials</a></li>
+          <li><a href="#contact" class="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="flex gap-4 items-center justify-center">
+        <a href="https://github.com/emmanuelobinna62-dotcom"
+         target="_blank" class="text-gray-400 hover:text-[#00E1FF] text-2xl">
+          <i class="fa-brands fa-github text-xl"></i>
+        </a>
+
+        <a href="https://www.facebook.com/EmDev?_rdc=4&_rdr#"
+          target="_blank"
+          class="text-gray-400 hover:text-[#00E1FF] text-2xl transition">
+          <i class="fa-brands fa-facebook text-xl"></i>
+        </a>
+
+        <a
+          href="mailto:emmanuelobinna62@gmail.com"
+          class="text-gray-400 hover:text-[#03CFEB] text-xl transition">
+          <i class="fa-solid fa-envelope text-xl"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/emmanuel-okafor-8a26b625b/"
+          target="_blank"
+          class="text-gray-400 hover:text-[#00E1FF] text-2xl transition">
+          <i class="fa-brands fa-linkedin text-xl"></i>
+        </a>
+      </div>
+    </div>
+    <hr class="text-gray-400/30 h-px">
+    <p class="text-sm text-gray-400 text-center mt-10">
+      © <span id="year"></span> EmDev. All rights reserved. Built with passion.
+    </p>
+    
+  </footer>
+
+
+<script type="module" src="/src/main.js"></script>
+ 
+</body>
+</html>
