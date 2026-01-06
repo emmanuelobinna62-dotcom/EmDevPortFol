@@ -12,7 +12,7 @@
   />
 
 </head>
-<body class="overflow-x-hidden bg-[#0E1115]">
+<body class="overflow-x-hidden bg-[#0E1115] max-w-full">
   <header>
     <nav class="flex bg-[#010511] h-20 justify-between items-center w-full max-w-full pr-10 pl-5 fixed z-50">
       <a href="#home"><img src="public/frontend-end-html-javascript-tailwind-css-html.png" class="max-w-40 h-fit" alt="company-logo"></a>
@@ -33,29 +33,38 @@
     </nav>
   </header>
   <main>
-    <section id="home" class=" section-1 min-h-screen  relative bg-[#21242C] flex flex-col items-center justify-center gap-8 md:pt-0 pt-10 px-8">
+    <section id="home" class=" section-1 min-h-screen  relative bg-[#21242C] flex flex-col items-center justify-center gap-8 md:pt-0 pt-10 px-8 mb-10">
        <div class="absolute inset-0 rounded-full bg-[radial-gradient(circle,#01CEE9,transparent)] blur-3xl opacity-30"></div>
       <h3 class="bg-[#21242C] text-[#01CDE8] max-w-fit py-2 px-3 rounded-full z-10">Frontend Developer</h3>
       <h1 class="text-4xl md:text-7xl font-[poppins] text-center font-bold z-10 text-white">Hi, I'm <span class="text-[#05DDFF]">Emmanuel</span> </h1>
       <p class="text-xl md:text-2xl max-w-2xl z-10 text-gray-400 text-center">I craft responsive, mobile-first websites with clean code and modern design.
          Turning ideas into beautiful digital experiences.
       </p>
-      <div class="md:flex md:flex-row md:gap-4 space-x-4 z-10 items-center justify-center max-w-xl">
-        <button class="bg-[#01CEE9] px-8 py-4 font-medium rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 cursor-pointer">View My Work</button>
-        <button class="bg-[#21242C] px-8 py-4 font-medium rounded-lg hover:opacity-90 transition-all duration-300 hover:bg-[#21242C]/70 border-[#21242C] hover:border-[#01CEE9] text-white cursor-pointer">Get In Touch</button>
+      
+      <div class="relative flex flex-col items-center justify-center gap-6 z-10">
+        
+       <!-- Buttons -->
+      <div class="flex flex-col md:flex-row gap-4 items-center justify-center max-w-lg">
+        <button class="bg-[#01CEE9] px-8 py-4 font-medium rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 cursor-pointer">
+          View My Work
+        </button>
+        <button class="bg-[#21242C] px-8 py-4 font-medium rounded-lg hover:opacity-90 transition-all duration-300 hover:bg-[#21242C]/70 border-[#21242C] hover:border-[#01CEE9] text-white cursor-pointer">
+          Get In Touch
+        </button>
       </div>
-      <a href="#project" class="absolute mt-10 bottom-10 left-1/2 right-1/2 -translate-x-1/2 flex flex-col items-center  gap-1 text-white animate-[float_1.6s_ease-in-out_infinite]">
-        <span class="text-xs tracking-wide uppercase opacity-70">
-          Scroll Down
-        </span>
+
+      <!-- Scroll Down -->
+      <a href="#project" class="flex flex-col items-center gap-1 text-white animate-[float_1.6s_ease-in-out_infinite] ml-20">
+        <span class="text-xs tracking-wide uppercase opacity-70">Scroll Down</span>
         <span class="text-xl">↓</span>
       </a>
+
     </section>
 
     <section id="project" class="section-2 min-h-[200vh] bg-[#0E1115] flex-flex-col items-center justify-center pt-24">
       <div class="flex flex-col items-center justify-center">
         <span class="font-medium text-sm tracking-wider mb-4 mt-20 text-[#03C1DB] uppercase">portfolio</span>
-        <h2 class="text-4xl md:text-4xl lg:text-6xl font-bold mb-6 text-white">Selected  <span class="text-[#03C1DB]">Projects</span></h2>
+        <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold mb-6 text-white">Selected  <span class="text-[#03C1DB]">Projects</span></h2>
         <p class="text-lg md:max-w-3xl max-w-sm text-gray-400 text-center mb-16">Each project is built with responsiveness, performance, and user experience in mind.</p>
       </div>
       <div class="project-box md:grid md:grid-cols-2 grid grid-cols-1 gap-8">
@@ -186,7 +195,7 @@
     <section id="skills" class="section-3 bg-[#0E1115] md:min-h-[150vh] min-h-[260vh]  flex flex-col items-center justify-center px-10 pt-20">
       <div class="flex flex-col items-center justify-center">
         <span class="font-medium text-sm tracking-wider mb-4 text-[#03C1DB] uppercase">Expertise</span>
-        <h2 class="text-4xl md:text-4xl lg:text-6xl font-bold mb-6 text-white">Skills &  <span class="text-[#03C1DB]">Technologies</span></h2>
+        <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold mb-6 text-white">Skills &  <span class="text-[#03C1DB]">Technologies</span></h2>
         <p class="text-lg md:max-w-4xl max-w-2xl text-gray-400 text-center mb-16">The tools and techniques I use to bring ideas to life.</p>
       </div>
       <div class="Technologies md:grid md:grid-cols-4 grid grid-cols-1 gap-4">
@@ -223,7 +232,7 @@
           <p class="leading-relaxed text-gray-400">Optimizing websites for fast loading times and smooth interactions.p>
         </div>
       </div>
-      <div class="mt-12 flex gap-2 flex-wrap min-w-xl text-center items-center justify-center">
+      <div class="mt-12 flex gap-2 flex-wrap max-w-xl text-center items-center justify-center">
         <span class="px-5 py-2.5 text-sm font-medium rounded-full border border-gray-700 bg-gray-400/10 text-white">HTML5</span>
         <span class="px-5 py-2.5 text-sm font-medium rounded-full border border-gray-700 bg-gray-400/10 text-white">CSS3</span>
         <span class="px-5 py-2.5 text-sm font-medium rounded-full border border-gray-700 bg-gray-400/10 text-white">JavaScript</span>
@@ -236,7 +245,7 @@
     <section id="testimonials" class="section-4 flex flex-col bg-[#14171C] px-10 pb-20 pt-28">
       <div class="flex flex-col items-center justify-center">
         <span class="font-medium text-sm tracking-wider mb-4 text-[#03C1DB] uppercase">Testimonials</span>
-        <h2 class="text-4xl md:text-4xl lg:text-6xl font-bold mb-6 text-white">What <span class="text-[#03C1DB]">Clients Say</span></h2>
+        <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold mb-6 text-white">What <span class="text-[#03C1DB]">Clients Say</span></h2>
         <p class="text-lg max-w-sm text-gray-400 text-center mb-16">Feedback from clients I've had the pleasure of working with.</p>
       </div>
       <div class="review-box md:flex md:flex-row flex flex-col justify-center gap-10">
@@ -277,7 +286,7 @@
     <section id="contact" class="bg-[#0E1115] flex flex-col items-center justify-center px-10 pt-32 pb-28">
       <div class="flex flex-col items-center justify-center">
         <span class="font-medium text-sm tracking-wider mb-4 text-[#03C1DB] uppercase">Contact</span>
-        <h2 class="text-4xl md:text-4xl lg:text-6xl font-bold mb-6 text-white">Let's <span class="text-[#03C1DB]">Work Together</span></h2>
+        <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold mb-6 text-white">Let's <span class="text-[#03C1DB]">Work Together</span></h2>
         <p class="text-lg md:max-w-2xl max-w-sm text-gray-400 text-center mb-16">Have a project in mind? I'd love to hear about it. Send me a message and let's create something amazing.</p>
       </div>
       <div class="md:flex md:flex-row flex flex-col md:items-start gap-12">
